@@ -25,7 +25,7 @@ namespace DataStructurePrograms
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0}=> Word add in list", node.data);
+            Console.WriteLine("{0}=> number add in list", node.data);
         }
         public void Search(T value)
         {
@@ -34,14 +34,14 @@ namespace DataStructurePrograms
             {
                 if (temp.data.Equals(value))
                 {
-                    Console.WriteLine("This Word {0} is found ", temp.data);
+                    Console.WriteLine("\nThis number is found: {0} ", temp.data);
                     return;
                 }
                 temp = temp.next;
             }
             if (temp == null)
             {
-                Console.WriteLine("{0} This Word is not found", value);
+                Console.WriteLine("\n{0} This number is not found", value);
                 Add(value);
             }
         }
